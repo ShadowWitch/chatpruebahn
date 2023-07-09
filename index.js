@@ -20,6 +20,10 @@ io.on('connection', (client) => {
     })
 })
 
+app.get('/', (req, res) => {
+    res.end('Hola mi cabezona peshosha, la Amo <3')
+})
+
 
 server.listen(port, () => {
     console.log(`Server running in port ${port}`)
